@@ -1,6 +1,6 @@
 # Visual identity
 
-_Not filled in yet. Run `/brand-setup`._
+_Not filled in yet. Run `/brand-starter`._
 
 Put logo files, font files and any design exports in this folder alongside this file.
 

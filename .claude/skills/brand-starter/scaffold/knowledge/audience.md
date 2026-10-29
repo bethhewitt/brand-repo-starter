@@ -1,6 +1,6 @@
 # Audience
 
-_Not filled in yet. Run `/brand-setup`._
+_Not filled in yet. Run `/brand-starter`._
 
 ## Who it's for
 

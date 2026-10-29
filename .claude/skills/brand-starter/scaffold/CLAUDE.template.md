@@ -2,7 +2,7 @@
 
 Claude reads this file at the start of every session. The brand files below load with it automatically, so every task starts from them.
 
-Run `/brand-setup` to fill this in. Run `/brand-check` to test it.
+Built with `/brand-starter`. Run `/brand-check` after changing the brand files.
 
 ## Brand files
 
@@ -16,7 +16,7 @@ For a repeat format, also read the matching file in `templates/`. For a feel of 
 
 ## Rules for every task
 
-1. **Check the setup first.** If any brand file above still says "Not filled in yet", tell the user and suggest running `/brand-setup` before doing anything else.
+1. **Check the setup first.** If any brand file above still says "Not filled in yet", tell the user and suggest running `/brand-starter` before doing anything else.
 2. **Don't invent facts.** Never make up statistics, prices, opening hours, product details, customer names, quotes, testimonials or claims. If the brand files don't cover it, say so and ask.
 3. **List what you assumed.** Under every piece of content, add a short "Invented or assumed" list: anything not taken from the brand files. Write "nothing" if that's true.
 4. **Only write from the brand files.** `sources/` is raw material for setup and may be out of date. Never copy lines or facts from it into new content. When the two disagree, the brand files win.
@@ -26,7 +26,7 @@ For a repeat format, also read the matching file in `templates/`. For a feel of 
 
 ## Brand rules
 
-_Filled in by `/brand-setup`. Up to 10 short, specific rules that would be embarrassing to break, such as words never used, claims never made or colours never paired._
+_Filled in by `/brand-starter`. Up to 10 short, specific rules that would be embarrassing to break, such as words never used, claims never made or colours never paired._
 
 ## Folders
 

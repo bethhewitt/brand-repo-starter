@@ -1,6 +1,6 @@
 # Voice
 
-_Not filled in yet. Run `/brand-setup`._
+_Not filled in yet. Run `/brand-starter`._
 
 ## In one line
 

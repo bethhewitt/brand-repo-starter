@@ -1,6 +1,6 @@
 # Brand repo starter
 
-A folder that teaches Claude your brand once, so every prompt after that starts from your real guidelines instead of a guess.
+Build a folder that teaches Claude your brand once, so every prompt after that starts from your real guidelines instead of a guess.
 
 No coding and no terminal needed. You need the Claude desktop app on a paid plan (for the Code tab).
 
@@ -12,30 +12,16 @@ No coding and no terminal needed. You need the Claude desktop app on a paid plan
 
 Keep your copy **private**. Once it's set up it holds your brand material.
 
-## Set it up in three steps
+## Build it
 
-### 1. Load what you already have
+Open the folder in the Claude desktop app (Code tab, then choose the folder) and type `/brand-starter`. Claude takes it from there in four steps:
 
-Put anything that describes your brand in `sources/`:
+1. **Start.** Claude asks for your brand name, your website and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Drag them into the chat. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
+2. **Questions.** Claude reads it all, works out what's missing, and asks you one question at a time. Most come with suggested answers to pick from. Expect around 10 to 20 questions. You can stop at any point and type `/brand-starter` again later to carry on.
+3. **Build.** Claude creates your brand files: who you are, who you're for, how you sound, what you say and how you look. Anything it couldn't confirm is marked as a gap, never guessed.
+4. **Check.** Claude writes three test pieces using only your brand files. You mark each one as on-brand or not. If something's off, Claude fixes the **brand file** that caused it, not the prompt, and tries again.
 
-- brand guidelines (save Word files, Google Docs and slides as PDF first)
-- 3 to 5 of your best past pieces: posts, emails, web pages
-- pitch decks, about pages, product sheets
-- logo files and any colour or font specs (these go in `brand/`)
-
-More real material means fewer questions in step 2. If you have very little, that's fine too.
-
-### 2. Run `/brand-setup`
-
-Open the folder in the Claude desktop app (Code tab, then choose the folder) and type `/brand-setup`.
-
-Claude reads everything in `sources/`, drafts your brand files, then asks you questions one at a time to fill the gaps. Expect around 10 to 20 questions, usually 15 to 20 minutes. Most questions have suggested answers to pick from. You can stop at any point and run it again later to carry on.
-
-### 3. Run `/brand-check`
-
-Claude writes three test pieces using only your brand files. You mark each one as on-brand or not. If something's off, Claude fixes the **brand file** that caused it, not the prompt, and tries again.
-
-When all three pass, you're set up.
+When all three test pieces pass, you're set up. It usually takes 20 to 30 minutes.
 
 ## Then use it
 
@@ -46,14 +32,16 @@ Open the folder and ask for things in plain English. Your brand files load at th
 - "Make an Instagram carousel explaining our pricing"
 - "Turn this blog post into a newsletter"
 
-When you correct something, Claude suggests the change to your brand files that would have prevented it. Accept it, and the fix applies to everyone who uses the folder, not just you. And you can turn tasks you repeat into skills of your own: just ask Claude to "make this a skill".
+When you correct something, Claude suggests the change to your brand files that would have prevented it. Accept it, and the fix applies to everyone who uses the folder, not just you. Run `/brand-check` again whenever you change the brand files.
 
-## What's in the folder
+You can also turn tasks you repeat into skills of your own: just ask Claude to "make this a skill".
+
+## What gets built
 
 | Folder | What goes in it |
 |---|---|
 | `CLAUDE.md` | The rules Claude reads at the start of every session |
-| `sources/` | Your raw material. Used for setup only, never copied into new content |
+| `sources/` | Your raw material and interview answers. Used for setup only, never copied into new content |
 | `knowledge/` | Who you are, who you're for, how you sound, what you say |
 | `brand/` | Colours, fonts, logos |
 | `templates/` | Formats you repeat (a weekly post, a monthly email) |

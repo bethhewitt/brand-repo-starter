@@ -9,7 +9,7 @@ Prove the brand files are enough on their own. If a test piece comes out off-bra
 
 ## 1. Check for gaps
 
-Read `CLAUDE.md`, everything in `knowledge/` and `brand/identity.md`. If any file still says "Not filled in yet", or any `[gap]` or `[conflict]` markers remain, list them in a line or two. Then ask whether to run `/brand-setup` first or test anyway.
+Read `CLAUDE.md`, everything in `knowledge/` and `brand/identity.md`. If any file still says "Not filled in yet", or any `[gap]` or `[conflict]` markers remain, list them in a line or two. Then ask whether to run `/brand-starter` first or test anyway.
 
 ## 2. Make three test pieces
 
