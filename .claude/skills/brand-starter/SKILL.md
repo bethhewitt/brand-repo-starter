@@ -9,7 +9,8 @@ Build this folder into a brand repo, starting from nothing. The user is a market
 
 There are four steps. Before starting, check where things are so a stopped setup can carry on:
 
-- `knowledge/` exists: the repo is built. Ask whether to run the checks (step 4) or start again.
+- `knowledge/` exists and none of its files say "Not filled in yet": the repo is built. Ask whether to run the checks (step 4) or start again.
+- `knowledge/` exists but some files still say "Not filled in yet": the build was interrupted. Read `sources/interview-notes.md` and carry on from step 3, filling in only the files that aren't done yet.
 - `sources/interview-notes.md` exists: the interview was started. Read it and carry on from step 2.
 - Otherwise, start at step 1.
 
@@ -20,8 +21,9 @@ There are four steps. Before starting, check where things are so a stopped setup
 - Ask for their existing material, all in one message:
   - the brand's name
   - their website address, if they have one
-  - any brand guidelines, past posts, emails, decks or logo files. They can drag them into the chat or drop them into `sources/`. Word files, Google Docs and slides work best saved as PDF first.
-- Save anything they attach in the chat into `sources/`. If they have nothing, that's fine: the interview will take longer.
+  - any brand guidelines, past posts, emails, decks or logo files. Ask them to drop these into the `sources` folder inside this folder (in Finder or File Explorer), then say when they're done. Word files, Google Docs and slides work best saved as PDF first.
+- If they attach files in the chat instead, read them, but don't rely on them being saved. Ask them to drop the files into `sources` too, so nothing is lost if the setup stops and carries on later. Text they paste into the chat, such as past posts, can be saved as markdown files in `sources/`.
+- If they have nothing, that's fine: the interview will take longer.
 
 ## 2. Ask for what's missing
 
@@ -49,12 +51,13 @@ Always ask these as well, because only a person can answer them:
 
 ## 3. Build the repo
 
-Copy everything in this skill's `scaffold/` folder into the root of this folder, keeping the folder structure. Save `CLAUDE.template.md` as `CLAUDE.md`. Don't overwrite `sources/`. Then fill in the brand files:
+Copy everything in this skill's `scaffold/` folder into the root of this folder, keeping the folder structure, except `CLAUDE.template.md`: save that as `CLAUDE.md` instead. Don't overwrite `sources/`, or any brand file that's already filled in. Then fill in the brand files:
 
 - Fill in `knowledge/about.md`, `knowledge/audience.md`, `knowledge/voice.md`, `knowledge/messaging.md` and `brand/identity.md`, keeping the headings. Remove the "Not filled in yet" line from each.
 - Only write what the material or the interview supports. Note where each fact came from, e.g. `(from: brand-guidelines.pdf)` or `(from: interview)`.
 - In `voice.md`, back every trait with a real line quoted from their material. Don't describe a voice you can't show. Don't use a line as an example if it breaks the brand's own guidelines.
 - Where nothing covers a heading, write `[gap: what's missing]`. Never fill a gap with a reasonable-sounding guess. A visible gap is better than a confident invention.
+- Where sources disagree and the interview didn't settle it (for example, the user skipped the question), write `[conflict: what disagrees, and where]` instead of choosing one.
 - In `CLAUDE.md`, replace `[Brand name]` with the brand's name. Write up to 10 rules in its "Brand rules" section: the ones that would be embarrassing to break, such as banned words, claims never made, colour or logo misuse, formatting rules. Each one short and specific.
 - Save the piece the user named as their best, plus up to two more strong on-brand pieces from their material, into `outputs/` as examples. One file each, named after what it is (e.g. `example-instagram-cardamom-buns.md`), with a line at the top saying which channel it's for and why it's a good example. Check with the user before saving any piece they didn't name.
 

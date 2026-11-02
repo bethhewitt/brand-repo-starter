@@ -16,7 +16,7 @@ Keep your copy **private**. Once it's set up it holds your brand material.
 
 Open the folder in the Claude desktop app (Code tab, then choose the folder) and type `/brand-starter`. Claude takes it from there in four steps:
 
-1. **Start.** Claude asks for your brand name, your website and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Drag them into the chat. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
+1. **Start.** Claude asks for your brand name, your website and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Claude makes a `sources` folder inside your brand folder: drop them in there. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
 2. **Questions.** Claude reads it all, works out what's missing, and asks you one question at a time. Most come with suggested answers to pick from. Expect around 10 to 20 questions. You can stop at any point and type `/brand-starter` again later to carry on.
 3. **Build.** Claude creates your brand files: who you are, who you're for, how you sound, what you say and how you look. Anything it couldn't confirm is marked as a gap, never guessed.
 4. **Check.** Claude writes three test pieces using only your brand files. You mark each one as on-brand or not. If something's off, Claude fixes the **brand file** that caused it, not the prompt, and tries again.
