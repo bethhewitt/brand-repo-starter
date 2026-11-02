@@ -36,6 +36,10 @@ When you correct something, Claude suggests the change to your brand files that 
 
 You can also turn tasks you repeat into skills of your own: just ask Claude to "make this a skill".
 
+## Share it with your team
+
+Put the finished folder on GitHub so your whole team works from the same brand files, and a fix one person makes reaches everyone. [SHARING.md](SHARING.md) walks you through it step by step with GitHub Desktop, no coding needed.
+
 ## What gets built
 
 | Folder | What goes in it |
