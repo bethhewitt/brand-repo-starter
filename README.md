@@ -53,3 +53,7 @@ Put the finished folder on GitHub so your whole team works from the same brand f
 | `templates/` | Formats you repeat (a weekly post, a monthly email) |
 | `work/` | Drafts in progress |
 | `outputs/` | Approved, finished pieces, which Claude also uses as examples |
+
+## Credits
+
+The grilling skill is adapted from Matt Pocock's [grill-me skill](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me), used under the MIT License. His licence is in `.claude/skills/grilling/LICENSE`.
