@@ -34,6 +34,8 @@ Open the folder and ask for things in plain English. Your brand files load at th
 
 When you correct something, Claude suggests the change to your brand files that would have prevented it. Accept it, and the fix applies to everyone who uses the folder, not just you. Run `/brand-check` again whenever you change the brand files.
 
+To stress-test a plan or idea before you start on it, type `/grilling`. Claude asks one question at a time, with answers to pick from, until every decision is settled.
+
 You can also turn tasks you repeat into skills of your own: just ask Claude to "make this a skill".
 
 ## Share it with your team
