@@ -70,4 +70,6 @@ Everyone else gets the change the next time they click Fetch origin.
 - **If GitHub Desktop says there's a conflict,** two people changed the same lines at once. Open the folder in Claude and ask "help me resolve this conflict". Claude will explain which version to keep.
 - **Made a mistake?** Every change is saved in the **History** tab. To undo a commit, right-click it and choose **Revert changes in commit**.
 - **Big files** over 100MB, such as long videos, can't go on GitHub. Keep those somewhere else and link to them.
-- **Don't want drafts shared?** Ask Claude to "stop sharing the work folder on GitHub" and it will set that up for you.
+- **Your `work` folder stays on your computer.** Drafts in `work/` are never uploaded to GitHub, so teammates only see the brand files and finished pieces. This keeps half-done drafts out of everyone's way.
+- **Want to share a draft?** Ask Claude to change the file so it can be shared, for example "move this draft into outputs so the team can see it". Then commit and push as in step 5.
+- **Drafts already on GitHub from before?** Ask Claude to "stop sharing the work folder on GitHub". It will take them off GitHub but leave them on your computer.

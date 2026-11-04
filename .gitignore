@@ -1,1 +1,5 @@
 .DS_Store
+
+# Drafts stay on your own computer, not on GitHub
+work/*
+!work/README.md

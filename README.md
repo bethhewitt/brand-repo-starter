@@ -51,7 +51,7 @@ Put the finished folder on GitHub so your whole team works from the same brand f
 | `knowledge/` | Who you are, who you're for, how you sound, what you say |
 | `brand/` | Colours, fonts, logos |
 | `templates/` | Formats you repeat (a weekly post, a monthly email) |
-| `work/` | Drafts in progress |
+| `work/` | Drafts in progress. Kept on your computer only, never shared on GitHub |
 | `outputs/` | Approved, finished pieces, which Claude also uses as examples |
 
 ## Credits
