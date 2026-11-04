@@ -19,7 +19,7 @@ Choose three pieces that suit this brand's channels (from `audience.md`) and cov
 2. **A longer written piece**, e.g. a newsletter intro, product email or web section.
 3. **A visual**: a single social image or slide as a self-contained HTML file using the brand's colours and fonts from `brand/identity.md`.
 
-Use only the brand files, and pick topics the brand files already cover so nothing needs inventing. If the logo or another asset isn't in `brand/`, leave a visible placeholder such as `[logo]` rather than drawing one. Save the pieces in `work/YYYY-MM-DD/brand-check/` using today's date.
+Use only the brand files, and pick topics the brand files already cover so nothing needs inventing. Aim each piece at a named audience or persona from `audience.md`, build it from the pillars in `messaging.md`, and say which you used above the piece. If the brand has personas, aim at least two pieces at different ones. Don't lean on anything listed under "What everyone says" in `competitors.md`. If the logo or another asset isn't in `brand/`, leave a visible placeholder such as `[logo]` rather than drawing one. Save the pieces in `work/YYYY-MM-DD/brand-check/` using today's date.
 
 Under each piece, add two short lists:
 

@@ -16,12 +16,12 @@ Keep your copy **private**. Once it's set up it holds your brand material.
 
 Open the folder in the Claude desktop app (Code tab, then choose the folder) and type `/brand-starter`. Claude takes it from there in four steps:
 
-1. **Start.** Claude asks for your brand name, your website and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Claude makes a `sources` folder inside your brand folder: drop them in there. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
-2. **Questions.** Claude reads it all, works out what's missing, and asks you one question at a time. Most come with suggested answers to pick from. Expect around 10 to 20 questions. You can stop at any point and type `/brand-starter` again later to carry on.
-3. **Build.** Claude creates your brand files: who you are, who you're for, how you sound, what you say and how you look. Anything it couldn't confirm is marked as a gap, never guessed.
+1. **Start.** Claude asks for your brand name, your website, the competitors your customers would choose instead, and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Claude makes a `sources` folder inside your brand folder: drop them in there. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
+2. **Questions.** Claude reads it all, looks at your competitors' websites and recent changes in your market, works out what's missing, and asks you one question at a time. Most come with suggested answers to pick from. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect around 15 to 25 questions. You can stop at any point and type `/brand-starter` again later to carry on.
+3. **Build.** Claude creates your brand files: who you are, your mission and vision, your competitors, your audience and personas, your messaging, how you sound and how you look. Anything it couldn't confirm is marked as a gap, never guessed.
 4. **Check.** Claude writes three test pieces using only your brand files. You mark each one as on-brand or not. If something's off, Claude fixes the **brand file** that caused it, not the prompt, and tries again.
 
-When all three test pieces pass, you're set up. It usually takes 20 to 30 minutes.
+When all three test pieces pass, you're set up. It usually takes 30 to 45 minutes.
 
 ## Then use it
 
@@ -48,7 +48,7 @@ Put the finished folder on GitHub so your whole team works from the same brand f
 |---|---|
 | `CLAUDE.md` | The rules Claude reads at the start of every session |
 | `sources/` | Your raw material and interview answers. Used for setup only, never copied into new content |
-| `knowledge/` | Who you are, who you're for, how you sound, what you say |
+| `knowledge/` | Who you are, why you exist, who you compete with, who you're for (with personas), what you say and how you sound |
 | `brand/` | Colours, fonts, logos |
 | `templates/` | Formats you repeat (a weekly post, a monthly email) |
 | `work/` | Drafts in progress. Kept on your computer only, never shared on GitHub |
