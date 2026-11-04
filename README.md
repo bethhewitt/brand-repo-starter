@@ -2,45 +2,77 @@
 
 Build a folder that teaches Claude your brand once, so every prompt after that starts from your real guidelines instead of a guess.
 
-No coding and no terminal needed. You need the Claude desktop app on a paid plan (for the Code tab).
+This version is for Claude. **Using another AI tool?** Use [Brand repo starter for any AI tool](https://github.com/bethhewitt/brand-repo-starter-any-ai) instead.
 
-## Get your copy
+No coding and no terminal needed. Set aside about 45 minutes. You can stop partway and carry on later.
 
-**Simplest:** click the green **Code** button on this page, choose **Download ZIP**, unzip it and rename the folder after your brand.
+## Before you start
 
-**If you use GitHub:** click **Use this template** to make your own private copy, then clone it with GitHub Desktop. Choose this if a team will share the brand files or you want a history of every change.
+You need:
 
-Keep your copy **private**. Once it's set up it holds your brand material.
+- **The Claude desktop app on a paid plan.** You'll work in its **Code** tab.
+- **Your brand material, if you have it:** brand guidelines, 3 to 5 of your best past posts or emails, decks and logo files. Save Word files, Google Docs and slides as PDF first. If you have very little, that's fine: Claude will ask more questions instead.
+- **The names of your main competitors:** the 2 to 5 brands or alternatives your customers would most likely choose instead, with their websites if you know them.
 
-## Build it
+## Install
 
-Open the folder in the Claude desktop app (Code tab, then choose the folder) and type `/brand-starter`. Claude takes it from there in four steps:
+1. **Download the kit.** On this page, click the green **Code** button, then **Download ZIP**.
+    - *You should see:* a file called `brand-repo-starter-main.zip` in your Downloads folder.
+2. **Unzip it and give it a home.** Double-click the ZIP to unzip it. Rename the folder after your brand, for example "Northside Bakery brand", and move it to Documents. Move the whole folder, not the files inside it, so the hidden `.claude` folder comes too.
+    - *You should see:* `README.md`, `SHARING.md` and `LICENSE` inside it.
+3. **Open the folder in Claude.** In the Claude desktop app, go to the **Code** tab and choose your brand folder. If it asks whether you trust the folder, say yes.
 
-1. **Start.** Claude asks for your brand name, your website, the competitors your customers would choose instead, and anything you already have: brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files. Claude makes a `sources` folder inside your brand folder: drop them in there. Save Word files, Google Docs and slides as PDF first. More real material means fewer questions. If you have very little, that's fine too.
-2. **Questions.** Claude reads it all, looks at your competitors' websites and recent changes in your market, works out what's missing, and asks you one question at a time. Most come with suggested answers to pick from. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect around 15 to 25 questions. You can stop at any point and type `/brand-starter` again later to carry on.
-3. **Build.** Claude creates your brand files: who you are, your mission and vision, your competitors, your audience and personas, your messaging, how you sound and how you look. Anything it couldn't confirm is marked as a gap, never guessed.
-4. **Check.** Claude writes three test pieces using only your brand files. You mark each one as on-brand or not. If something's off, Claude fixes the **brand file** that caused it, not the prompt, and tries again.
+**Using GitHub instead?** If a team will share the brand files, or you want a history of every change, click **Use this template** on this page to make your own **private** copy, then clone it with GitHub Desktop and open that folder in step 3.
 
-When all three test pieces pass, you're set up. It usually takes 30 to 45 minutes.
+## Set up your brand
 
-## Then use it
+1. **Start the setup.** Type `/brand-starter` and press Enter.
+    - *You should see:* a short message about what's going to happen, then a request for your brand name, your website, your main competitors and any material you have.
+2. **Add your material.** Claude makes a `sources` folder inside your brand folder. Open it in Finder or File Explorer, drop your files in, then tell Claude you're done. Reply with your brand name, website and competitors in the same message.
+    - Files dragged into the chat can be read, but may not be saved. Put them in `sources` so nothing is lost if you stop and carry on later.
+    - *You should see:* a two- or three-line summary of what Claude found and what looks thin. Claude also looks at your competitors' websites and recent changes in your market. If you didn't name any competitors, it suggests some for you to confirm.
+3. **Answer the questions.** Claude asks one question at a time, usually with suggested answers to click. Pick one, or type your own. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect 15 to 25 questions.
+    - When Claude asks to read your website or your competitors' websites, search the web or create files, choose **Allow**. It only creates files inside your brand folder.
+    - To stop, just close the session. Later, open the folder again and type `/brand-starter`: it carries on where you left off.
+4. **Let Claude build your brand files.** After the last question, Claude writes your brand files and tells you what's built and which gaps are left.
+    - *You should see:* new `knowledge`, `brand`, `templates`, `work` and `outputs` folders, and a `CLAUDE.md` file. Anything Claude couldn't confirm is marked `[gap: …]` instead of guessed.
+5. **Judge three test pieces.** Claude writes a short post, a longer piece and a simple visual using only your brand files, each aimed at one of your audiences or personas, and opens the visual for you. Mark each one **On-brand**, **Close, but something's off** or **Off-brand**, and say what's wrong.
+    - When something's off, Claude shows you the change it would make to a brand file. Approve it, and Claude tries the piece again.
+    - *You should see:* a message saying your brand is ready once all three pieces pass, with a few example requests to try.
 
-Open the folder and ask for things in plain English. Your brand files load at the start of every session, and under each piece Claude lists anything it had to invent or assume, so you can check it before it goes out. For example:
+## Use it day to day
+
+Open your brand folder in the Code tab and ask for things in plain English. For example:
 
 - "Write three LinkedIn posts about our new product launch"
 - "Give me ten content ideas for next month based on our audience"
 - "Make an Instagram carousel explaining our pricing"
 - "Turn this blog post into a newsletter"
 
-When you correct something, Claude suggests the change to your brand files that would have prevented it. Accept it, and the fix applies to everyone who uses the folder, not just you. Run `/brand-check` again whenever you change the brand files.
+Your brand files load at the start of every session. Under each piece, Claude lists anything it had to invent or assume. Check that list before anything goes out. When you correct something, Claude suggests a change to your brand files so the same mistake doesn't happen again. Accept it, and the fix applies to everyone who uses the folder, not just you. After changing the brand files, type `/brand-check`.
 
 To stress-test a plan or idea before you start on it, type `/grilling`. Claude asks one question at a time, with answers to pick from, until every decision is settled.
 
 You can also turn tasks you repeat into skills of your own: just ask Claude to "make this a skill".
 
+Keep your copy **private**. Once it's set up, it holds your brand material.
+
 ## Share it with your team
 
 Put the finished folder on GitHub so your whole team works from the same brand files, and a fix one person makes reaches everyone. [SHARING.md](SHARING.md) walks you through it step by step with GitHub Desktop, no coding needed.
+
+## If something goes wrong
+
+| Problem | Fix |
+|---|---|
+| No **Code** tab in the app | Sign in with a paid plan and update the app to the latest version. |
+| `/brand-starter` isn't recognised | You've opened the wrong folder, or the hidden `.claude` folder was left behind. Re-download the ZIP, move the whole folder, and open that folder in the Code tab. |
+| Claude doesn't mention your files | Check they're inside the `sources` folder in your brand folder, then tell Claude they're there. |
+| Setup stopped halfway | Open the same folder and type `/brand-starter` again. It carries on where it left off. |
+| Claude can't read a competitor's website | Some sites block automated visits. Copy the text from their homepage and paste it into the chat. Claude uses that instead. |
+| A test piece keeps coming out wrong | Say exactly what's off, such as a word you'd never use. Claude fixes the brand file, not just that piece. |
+| Claude says a brand file is "Not filled in yet" | Setup didn't finish. Type `/brand-starter` to complete it. |
+| You set up your brand with an older version | Copy in the new `.claude` folder from the latest download, then type `/brand-starter`. It asks only what's needed for the new brand files, and keeps your brand rules. |
 
 ## What gets built
 
