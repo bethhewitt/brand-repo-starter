@@ -24,7 +24,8 @@ Older setups kept every brand file except the visual identity in `knowledge/`, w
 1. Move `knowledge/mission.md`, `knowledge/messaging.md` and `knowledge/voice.md` into `brand/`, unchanged. If a file of the same name is already in `brand/`, stop and ask the user which to keep.
 2. Copy `scaffold/knowledge/offering.md` and `scaffold/knowledge/proof.md` into `knowledge/`. Move the content under "What it offers" in `about.md`, and any prices under "Practical details", into `offering.md`. Move the content under "Proof" into `proof.md`, under the matching headings. Keep every `(from: …)` note and every `[gap: …]` marker. Move, don't rewrite. Then remove the emptied headings from `about.md`.
 3. Move anything under "Where we're different" in `competitors.md` that isn't already in "What makes us different" in `messaging.md` into that section, then remove the heading from `competitors.md`.
-4. Update `CLAUDE.md` as step 3 describes for an older setup.
+4. Anywhere else that points to `about.md` for an offer, a price or a piece of proof, such as `(from: about.md)` notes in other brand files, the "Brand rules" in `CLAUDE.md`, or a note at the top of an example in `outputs/`, change only the file name to `offering.md` or `proof.md`.
+5. Update `CLAUDE.md` as step 3 describes for an older setup.
 
 Any heading still empty after the move (in `offering.md`, `proof.md`, or new headings such as "By channel" in `voice.md`) counts as unfinished, so the checks above send you back to step 2 for those headings only.
 
@@ -81,7 +82,7 @@ Always ask these as well, because only a person can answer them:
 
 Copy everything in this skill's `scaffold/` folder into the root of this folder, keeping the folder structure, except `CLAUDE.template.md`: save that as `CLAUDE.md` instead. Don't overwrite `sources/`, or any brand file that's already filled in.
 
-If `CLAUDE.md` already exists with the brand's name at the top, this is an update to an older setup: don't replace it, because its brand rules would be lost. Instead, replace its "Brand files", "Rules for every task" and "Folders" sections with the ones in `CLAUDE.template.md`. Keep its title and its "Brand rules" section exactly as they are. If a filled-in brand file is missing a heading its scaffold outline has, add the heading in the same place as the outline and fill it in, leaving the rest of the file as it is.
+If `CLAUDE.md` already exists with the brand's name at the top, this is an update to an older setup: don't replace it, because its brand rules would be lost. Instead, replace its "Brand files", "Rules for every task" and "Folders" sections with the ones in `CLAUDE.template.md`. Keep its title and its "Brand rules" section exactly as they are, apart from the file names changed in "Moving an older setup". If a filled-in brand file is missing a heading its scaffold outline has, add the heading in the same place as the outline and fill it in, leaving the rest of the file as it is.
 
 Then fill in the brand files:
 
