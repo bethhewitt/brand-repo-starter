@@ -11,7 +11,7 @@ No coding and no terminal needed. Set aside about 45 minutes. You can stop partw
 You need:
 
 - **The Claude desktop app on a paid plan.** You'll work in its **Code** tab.
-- **Your brand material, if you have it:** brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files, price lists or service sheets, and any testimonials or reviews you can use. Save Word files, Google Docs and slides as PDF first. If you have very little, that's fine: Claude will ask more questions instead.
+- **Your brand material, if you have it:** brand guidelines, any strategy documents (mission, vision, positioning, personas or competitor analysis), 3 to 5 of your best past posts or emails, decks, logo files, price lists or service sheets, and any testimonials or reviews you can use. Save Word files, Google Docs and slides as PDF first. If you have very little, that's fine: Claude will ask more questions instead.
 - **The names of your main competitors:** the 2 to 5 brands or alternatives your customers would most likely choose instead, with their websites if you know them.
 
 ## Install
@@ -30,8 +30,8 @@ You need:
     - *You should see:* a short message about what's going to happen, then a request for your brand name, your website, your main competitors and any material you have.
 2. **Add your material.** Claude makes a `sources` folder inside your brand folder. Open it in Finder or File Explorer, drop your files in, then tell Claude you're done. Reply with your brand name, website and competitors in the same message.
     - Files dragged into the chat can be read, but may not be saved. Put them in `sources` so nothing is lost if you stop and carry on later.
-    - *You should see:* a two- or three-line summary of what Claude found and what looks thin. Claude also looks at your competitors' websites and recent changes in your market. If you didn't name any competitors, it suggests some for you to confirm.
-3. **Answer the questions.** Claude asks one question at a time, usually with suggested answers to click. Pick one, or type your own. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect 20 to 30 questions.
+    - *You should see:* a two- or three-line summary of what Claude found and what looks thin. Claude also looks at your competitors' websites and recent changes in your market, unless your material already covers them. If you didn't name any competitors, it suggests some for you to confirm.
+3. **Answer the questions.** Claude asks one question at a time, usually with suggested answers to click. Pick one, or type your own. If you already have a mission, vision, positioning or tagline, Claude tests it and asks whether to keep it, sharpen it or replace it. If you don't, Claude drafts a few options for you to choose between. Expect 20 to 30 questions, or fewer if your material already answers a lot: anything it covers is only confirmed, not asked again.
     - When Claude asks to read your website or your competitors' websites, search the web or create files, choose **Allow**. It only creates files inside your brand folder.
     - To stop, just close the session. Later, open the folder again and type `/brand-starter`: it carries on where you left off.
 4. **Let Claude build your brand files.** After the last question, Claude writes your brand files and tells you what's built and which gaps are left.
