@@ -23,11 +23,7 @@ For each direct competitor: their headline, who they say they're for, the three 
 
 ## What everyone says
 
-Claims and phrases most competitors use. Content that leans on these sounds like everyone else.
-
-## Where we're different
-
-What no competitor is saying that this brand can truthfully say. Each point backed by `about.md` or `messaging.md`.
+Claims and phrases most competitors use. Content that leans on these sounds like everyone else. How this brand is different goes in `brand/messaging.md`.
 
 ## How we talk about competitors
 

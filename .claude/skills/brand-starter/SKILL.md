@@ -7,12 +7,26 @@ description: Build a brand repo from scratch. Collects the user's existing brand
 
 Build this folder into a brand repo, starting from nothing. The user is a marketer, not a developer. Use plain language, and don't mention files or folders they don't need to know about.
 
+The brand files are every `.md` file in this skill's `scaffold/knowledge/` and `scaffold/brand/`. Facts go in `knowledge/` (about, offering, proof, audience, competitors). Choices go in `brand/` (mission, messaging, voice, visual identity). When checking a file's headings against its scaffold outline, `[Offer name]` in `offering.md` stands for each real offer: every offer needs the headings beneath it.
+
 There are four steps. Before starting, check where things are so a stopped setup can carry on:
 
-- `knowledge/` has every file in this skill's `scaffold/knowledge/` and none of them say "Not filled in yet": the repo is built. Ask whether to run the checks (step 4) or start again.
-- `knowledge/` exists but some files still say "Not filled in yet", or a file from `scaffold/knowledge/` is missing: the build is unfinished. Read `sources/interview-notes.md`. If the notes don't cover the headings in the unfinished files, go back to step 2 for those headings only. Then carry on from step 3, filling in only the files that aren't done yet.
+- `knowledge/mission.md`, `knowledge/messaging.md` or `knowledge/voice.md` exists: this was set up with an older version. Move it to the new layout first (see "Moving an older setup" below), then carry on with the checks that follow.
+- Every brand file exists, none of them says "Not filled in yet", and each one has every heading its scaffold outline has: the repo is built. Ask whether to run the checks (step 4) or start again.
+- `knowledge/` exists but a brand file is missing, still says "Not filled in yet", or is missing a heading its scaffold outline has: the build is unfinished. Read `sources/interview-notes.md`. If the notes don't cover the missing or unfinished headings, go back to step 2 for those headings only. Then carry on from step 3, filling in only what isn't done yet.
 - `sources/interview-notes.md` exists: the interview was started. Read it and carry on from step 2.
 - Otherwise, start at step 1.
+
+### Moving an older setup
+
+Older setups kept every brand file except the visual identity in `knowledge/`, with the offering and proof inside `about.md`. Tell the user in one line that you're reorganising their brand files into the new layout and that nothing they confirmed will be lost. Then:
+
+1. Move `knowledge/mission.md`, `knowledge/messaging.md` and `knowledge/voice.md` into `brand/`, unchanged. If a file of the same name is already in `brand/`, stop and ask the user which to keep.
+2. Copy `scaffold/knowledge/offering.md` and `scaffold/knowledge/proof.md` into `knowledge/`. Move the content under "What it offers" in `about.md`, and any prices under "Practical details", into `offering.md`. Move the content under "Proof" into `proof.md`, under the matching headings. Keep every `(from: …)` note and every `[gap: …]` marker. Move, don't rewrite. Then remove the emptied headings from `about.md`.
+3. Move anything under "Where we're different" in `competitors.md` that isn't already in "What makes us different" in `messaging.md` into that section, then remove the heading from `competitors.md`.
+4. Update `CLAUDE.md` as step 3 describes for an older setup.
+
+Any heading still empty after the move (in `offering.md`, `proof.md`, or new headings such as "By channel" in `voice.md`) counts as unfinished, so the checks above send you back to step 2 for those headings only.
 
 ## 1. Start
 
@@ -22,7 +36,7 @@ There are four steps. Before starting, check where things are so a stopped setup
   - the brand's name
   - their website address, if they have one
   - the 2 to 5 brands or alternatives their customers would most likely choose instead, with website addresses if they know them
-  - any brand guidelines, past posts, emails, decks or logo files. Ask them to drop these into the `sources` folder inside this folder (in Finder or File Explorer), then say when they're done. Word files, Google Docs and slides work best saved as PDF first.
+  - any brand guidelines, past posts, emails, decks, logo files, price lists or service sheets, and testimonials or reviews. Ask them to drop these into the `sources` folder inside this folder (in Finder or File Explorer), then say when they're done. Word files, Google Docs and slides work best saved as PDF first.
 - If they attach files in the chat instead, read them, but don't rely on them being saved. Ask them to drop the files into `sources` too, so nothing is lost if the setup stops and carries on later. Text they paste into the chat, such as past posts, can be saved as markdown files in `sources/`.
 - If they have nothing, that's fine: the interview will take longer.
 
@@ -32,7 +46,7 @@ There are four steps. Before starting, check where things are so a stopped setup
 
 **Research the competitors and the market.** For each competitor the user named, visit their homepage, about page and main social profile. Note how they describe themselves (quote headlines and subheads word for word), who they say they're for, the three things they lead with, and the proof they show. Then search the web for the 3 to 5 recent changes in the category, platforms or audience behaviour that would change what this brand's content should do, each with one specific fact and its source and date. Save all of it, with today's date, in `sources/competitor-research.md`. If the user named no competitors, suggest a few from the research and confirm them before profiling.
 
-**Work out what's missing.** Use the outlines in this skill's `scaffold/knowledge/` and `scaffold/brand/identity.md` as the checklist: every heading in them needs an answer. List the gaps (nothing in the material) and conflicts (sources that disagree).
+**Work out what's missing.** Use the outlines in this skill's `scaffold/knowledge/` and `scaffold/brand/` as the checklist: every heading in them needs an answer. List the gaps (nothing in the material) and conflicts (sources that disagree).
 
 Always ask these as well, because only a person can answer them:
 
@@ -43,15 +57,19 @@ Always ask these as well, because only a person can answer them:
 - Which of what you know about your customers comes from real data (analytics, reviews, sales), and which is belief?
 - Who is this brand not for?
 - What would you never say, or never want to be mistaken for?
+- What do you sell? For each offer: who it's for, what's included, the price or how it's quoted, and how it works.
 - Which claims can you prove, and how?
+- Which reviews, testimonials, numbers, customer names or results can be used in public content, and which are internal only?
 - Which past piece is the best example of you, and why?
 - What do people usually get wrong when they write or design for you?
-- What practical details come up in most content: opening hours, location, prices, how to buy or book?
+- Does the way you sound change from one channel to another?
+- What should photos and images look like, and what should never appear in them?
+- What practical details come up in most content: opening hours, location, how to buy or book?
 
 **Interview the user.** Rules:
 
 - **One question per turn.** Ask with the AskUserQuestion tool. Give 2 to 4 concrete options drawn from what the material suggests, put your best guess first and mark it "(Recommended)", and put the reasoning in each option's description. The tool adds a free-text option, so don't add your own "Other".
-- **Most foundational first:** mission and vision, then competitors and audience, then positioning and messaging, then voice, then formatting details.
+- **Most foundational first:** mission and vision, then the offering, then competitors and audience, then proof, then positioning and messaging, then voice, then visual identity and formatting details.
 - **Draft statements for the user to choose from.** For the mission, vision, positioning and tagline, draft 2 to 4 options from the material, ranging from safe to bold. Before offering them, test each one: could a new team member repeat it after one reading? Is it true today (or, for the vision, plausible)? Would it be wrong if a competitor said it? Does it rule something out? Offer only the options that pass. Settle the mission before the vision, and the positioning before the tagline.
 - **Personas only where they help.** Add personas when people in the audience care about meaningfully different things, such as a buyer and a user. The material can't tell you what goes on in a persona's head, so ask the user for that rather than inventing it.
 - **Group related questions.** If several gaps or conflicts share one cause, such as an out-of-date website breaking three guideline rules, ask one question that settles them all. For a conflict, ask which source is current.
@@ -63,16 +81,19 @@ Always ask these as well, because only a person can answer them:
 
 Copy everything in this skill's `scaffold/` folder into the root of this folder, keeping the folder structure, except `CLAUDE.template.md`: save that as `CLAUDE.md` instead. Don't overwrite `sources/`, or any brand file that's already filled in.
 
-If `CLAUDE.md` already exists with the brand's name at the top, this is an update to an older setup: don't replace it, because its brand rules would be lost. Instead, compare it with `CLAUDE.template.md` and add only what it's missing: any `@` line under "Brand files", and any rule under "Rules for every task" (renumbering the list). Keep its "Brand rules" section exactly as it is.
+If `CLAUDE.md` already exists with the brand's name at the top, this is an update to an older setup: don't replace it, because its brand rules would be lost. Instead, replace its "Brand files", "Rules for every task" and "Folders" sections with the ones in `CLAUDE.template.md`. Keep its title and its "Brand rules" section exactly as they are. If a filled-in brand file is missing a heading its scaffold outline has, add the heading in the same place as the outline and fill it in, leaving the rest of the file as it is.
 
 Then fill in the brand files:
 
-- Fill in every file in `knowledge/` (`about.md`, `mission.md`, `competitors.md`, `audience.md`, `messaging.md`, `voice.md`) and `brand/identity.md`, keeping the headings. Remove the "Not filled in yet" line from each.
+- Fill in every file in `knowledge/` (`about.md`, `offering.md`, `proof.md`, `audience.md`, `competitors.md`) and `brand/` (`mission.md`, `messaging.md`, `voice.md`, `identity.md`), keeping the headings. Remove the "Not filled in yet" line from each.
 - Only write what the material or the interview supports. Note where each fact came from, e.g. `(from: brand-guidelines.pdf)` or `(from: interview)`.
+- In `offering.md`, write one section per offer. Never estimate a price: if the user didn't give one, write how it's quoted if they said, or `[gap: price]`.
+- In `proof.md`, quote testimonials word for word and never tidy them up. Mark each item (cleared) or (internal only), as the user said. If they didn't say, write `[gap: cleared for public use?]` next to it.
 - In `competitors.md`, quote competitors' own words exactly, with the page and the date checked. If the user didn't say whether content may name competitors, write `[gap: whether content may name competitors]`.
 - In `audience.md`, mark each point (observed) or (assumed), as the file explains.
-- In `messaging.md`, every pillar and difference needs proof from `about.md` or the interview. Where there's none, write the pillar anyway and add `[gap: proof needed, e.g. a review score or customer number]`. Don't use anything listed under "What everyone says" in `competitors.md`.
+- In `messaging.md`, every pillar and difference needs proof from `proof.md`. Where there's none, write the pillar anyway and add `[gap: proof needed, e.g. a review score or customer number]`. Don't use anything listed under "What everyone says" in `competitors.md`.
 - In `voice.md`, back every trait with a real line quoted from their material. Don't describe a voice you can't show. Don't use a line as an example if it breaks the brand's own guidelines.
+- In `identity.md`, check each text and background colour pair you list under "Contrast" and give its ratio.
 - Avoid empty words such as "inspire", "empower", "world-class" and "passionate" in every file, unless the sentence falls apart without them.
 - Where nothing covers a heading, write `[gap: what's missing]`. Never fill a gap with a reasonable-sounding guess. A visible gap is better than a confident invention.
 - Where sources disagree and the interview didn't settle it (for example, the user skipped the question), write `[conflict: what disagrees, and where]` instead of choosing one.

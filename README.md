@@ -11,7 +11,7 @@ No coding and no terminal needed. Set aside about 45 minutes. You can stop partw
 You need:
 
 - **The Claude desktop app on a paid plan.** You'll work in its **Code** tab.
-- **Your brand material, if you have it:** brand guidelines, 3 to 5 of your best past posts or emails, decks and logo files. Save Word files, Google Docs and slides as PDF first. If you have very little, that's fine: Claude will ask more questions instead.
+- **Your brand material, if you have it:** brand guidelines, 3 to 5 of your best past posts or emails, decks, logo files, price lists or service sheets, and any testimonials or reviews you can use. Save Word files, Google Docs and slides as PDF first. If you have very little, that's fine: Claude will ask more questions instead.
 - **The names of your main competitors:** the 2 to 5 brands or alternatives your customers would most likely choose instead, with their websites if you know them.
 
 ## Install
@@ -31,7 +31,7 @@ You need:
 2. **Add your material.** Claude makes a `sources` folder inside your brand folder. Open it in Finder or File Explorer, drop your files in, then tell Claude you're done. Reply with your brand name, website and competitors in the same message.
     - Files dragged into the chat can be read, but may not be saved. Put them in `sources` so nothing is lost if you stop and carry on later.
     - *You should see:* a two- or three-line summary of what Claude found and what looks thin. Claude also looks at your competitors' websites and recent changes in your market. If you didn't name any competitors, it suggests some for you to confirm.
-3. **Answer the questions.** Claude asks one question at a time, usually with suggested answers to click. Pick one, or type your own. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect 15 to 25 questions.
+3. **Answer the questions.** Claude asks one question at a time, usually with suggested answers to click. Pick one, or type your own. For your mission, vision, positioning and tagline, Claude drafts a few options for you to choose between. Expect 20 to 30 questions.
     - When Claude asks to read your website or your competitors' websites, search the web or create files, choose **Allow**. It only creates files inside your brand folder.
     - To stop, just close the session. Later, open the folder again and type `/brand-starter`: it carries on where you left off.
 4. **Let Claude build your brand files.** After the last question, Claude writes your brand files and tells you what's built and which gaps are left.
@@ -72,7 +72,7 @@ Put the finished folder on GitHub so your whole team works from the same brand f
 | Claude can't read a competitor's website | Some sites block automated visits. Copy the text from their homepage and paste it into the chat. Claude uses that instead. |
 | A test piece keeps coming out wrong | Say exactly what's off, such as a word you'd never use. Claude fixes the brand file, not just that piece. |
 | Claude says a brand file is "Not filled in yet" | Setup didn't finish. Type `/brand-starter` to complete it. |
-| You set up your brand with an older version | Copy in the new `.claude` folder from the latest download, then type `/brand-starter`. It asks only what's needed for the new brand files, and keeps your brand rules. |
+| You set up your brand with an older version | Copy in the new `.claude` folder from the latest download, then type `/brand-starter`. It moves your brand files into the new layout without losing anything, asks only what's needed for the new parts, and keeps your brand rules. |
 
 ## What gets built
 
@@ -80,8 +80,8 @@ Put the finished folder on GitHub so your whole team works from the same brand f
 |---|---|
 | `CLAUDE.md` | The rules Claude reads at the start of every session |
 | `sources/` | Your raw material and interview answers. Used for setup only, never copied into new content |
-| `knowledge/` | Who you are, why you exist, who you compete with, who you're for (with personas), what you say and how you sound |
-| `brand/` | Colours, fonts, logos |
+| `knowledge/` | The facts: who you are, what you sell and for how much, your proof (testimonials, results, customers), who you're for (with personas) and who you compete with. Update these whenever something changes. |
+| `brand/` | The choices: why you exist, what you say, how you sound and how you look, with your logo and font files. Change these rarely, and with care. |
 | `templates/` | Formats you repeat (a weekly post, a monthly email) |
 | `work/` | Drafts in progress. Kept on your computer only, never shared on GitHub |
 | `outputs/` | Approved, finished pieces, which Claude also uses as examples |
